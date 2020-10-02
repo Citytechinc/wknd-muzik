@@ -60,3 +60,7 @@ longevity-caculator/content/target/
 .idea/
 *.iml
 
+#node and front end build artifacts
+node/
+node_modules/
+dist/
