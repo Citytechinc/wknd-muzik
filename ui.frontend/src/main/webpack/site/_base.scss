@@ -6,22 +6,15 @@ body {
     font-size:   $font-size;
     font-family: $font-family;
     line-height: $font-height;
-    color:       $color-foreground;
-    background:  $color-background;
-
-    @media (prefers-color-scheme: dark) {
-        color:       $color-foreground-dark;
-        background:  $color-background-dark;
-    }
+}
+input,textarea {
+    appearance:none;
+    border-radius:0
 }
 
-
 a {
-    color: $color-link;
-
-    @media (prefers-color-scheme: dark) {
-        color: $color-link-dark;
-    }
+    text-decoration: none;
+    color: inherit;
 }
 
 button,
@@ -30,4 +23,8 @@ optgroup,
 select,
 textarea {
     font: inherit;
+}
+
+ul {
+    list-style: none;
 }
