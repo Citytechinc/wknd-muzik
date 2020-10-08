@@ -64,3 +64,5 @@ longevity-caculator/content/target/
 node/
 node_modules/
 dist/
+ui.apps/src/main/content/jcr_root/apps/wknd-muzik/clientlibs/clientlib-dependencies/
+ui.apps/src/main/content/jcr_root/apps/wknd-muzik/clientlibs/clientlib-site/
