@@ -2,26 +2,20 @@
 
 html,
 body {
-    margin: 0;
     font-size:   $font-size;
     font-family: $font-family;
     line-height: $font-height;
-    color:       $color-foreground;
-    background:  $color-background;
-
-    @media (prefers-color-scheme: dark) {
-        color:       $color-foreground-dark;
-        background:  $color-background-dark;
-    }
 }
 
+input,
+textarea {
+    appearance: none;
+    border-radius: 0;
+}
 
 a {
-    color: $color-link;
-
-    @media (prefers-color-scheme: dark) {
-        color: $color-link-dark;
-    }
+    text-decoration: none;
+    color: inherit;
 }
 
 button,
@@ -30,4 +24,65 @@ optgroup,
 select,
 textarea {
     font: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/**
+*set Base font size as 62.5%(=10px=1rem)
+*/
+html {
+    font-size: 62.5%;
+}
+
+/**
+*base heading styles
+*/
+h1, .heading1 ,
+h2, .heading2 ,
+h3, .heading3 ,
+h4, .heading4 ,
+h5, .heading5 ,
+h6, .heading6 {
+    font-family: $font-family;
+    font-stretch: normal;
+    font-style: normal;
+}
+
+h1, .heading1 {
+    font-size: $font-size-h1;
+    font-weight: $font-weight-bold;
+    line-height: 1.23;
+}
+
+h2, .heading2 {
+    font-size: $font-size-h2;
+    font-weight: $font-weight-bold;
+    line-height: 1.22;
+}
+
+h3, .heading3 {
+    font-size: $font-size-h3;
+    font-weight: $font-weight-semi-bold;
+    line-height: 1.28;
+}
+
+h4, .heading4 {
+    font-size: $font-size-h4;
+    font-weight: $font-weight-semi-bold;
+    line-height: 1.29;
+}
+
+h5, .heading5 {
+    font-size: $font-size-h5;
+    font-weight: $font-weight-bold;
+    line-height: 1.25;
+}
+
+h6, .heading6 {
+    font-size: $font-size-h6;
+    font-weight: $font-weight-bold;
+    line-height: 1.25;
 }

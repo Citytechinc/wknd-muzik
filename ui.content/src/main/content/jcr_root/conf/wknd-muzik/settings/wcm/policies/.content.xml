@@ -34,9 +34,9 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
@@ -339,6 +339,40 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <separator jcr:primaryType="nt:unstructured">
+                <policy_1602151807999
+                    cq:styleDefaultClasses="cmp-separator--default"
+                    jcr:lastModified="{Date}2020-10-08T15:41:48.597+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="WKND MUZIK-Separator Policy"
+                    sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Alignment"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-separator--default cmp-separator--left"
+                                    cq:styleId="1602151861410"
+                                    cq:styleLabel="Left"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-separator--default cmp-separator--center"
+                                    cq:styleId="1602151864767"
+                                    cq:styleLabel="Center"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="cmp-separator--default cmp-separator--right"
+                                    cq:styleId="1602151868805"
+                                    cq:styleLabel="Right"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1602151807999>
+            </separator>
         </components>
     </wknd-muzik>
 </jcr:root>
