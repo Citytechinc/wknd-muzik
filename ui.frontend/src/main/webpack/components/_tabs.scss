@@ -3,24 +3,21 @@
     align-items: center;
 }
 .cmp-tabs__tab {
-    font-size: $font-size-h5;
-    font-weight: normal;
-    /* Commented out filter for time being */
-//     filter: blur(10px);
-    line-height: 1.29;
+    @extend .heading5;
     letter-spacing: 2.8px;
     text-align: center;
     color: $color-white;
-    margin-right: 70px;
+    padding: 13px;
+    border-radius: 8px;
+    margin-right: 60px;
     &:last-child {
         margin-right: 0px;
     }
 }
 .cmp-tabs__tab--active {
-    padding: 12px 13px;
-    border-radius: 8px;
-    background-color: $color-blue;
+    background-color: $color-primary;
     font-weight: $font-weight-bold;
+    border-color: transparent;
 }
 .cmp-tabs__tabpanel {}
 .cmp-tabs__tabpanel--active {}
