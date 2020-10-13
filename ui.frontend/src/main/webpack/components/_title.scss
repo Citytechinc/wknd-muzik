@@ -1,3 +1,15 @@
-.cmp-title {}
-.cmp-title__text {}
-.cmp-title__link {}
+.cmp-title--pseudo-h1 {
+    .cmp-title {
+        &__text {
+            @extend .heading1;
+        }
+    }
+}
+
+.cmp-title--uppercase {
+    .cmp-title {
+        &__text {
+            text-transform: uppercase;
+        }
+    }
+}

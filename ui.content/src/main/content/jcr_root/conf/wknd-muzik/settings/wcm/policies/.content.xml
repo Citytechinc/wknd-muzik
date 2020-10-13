@@ -77,6 +77,8 @@
             </image>
             <text jcr:primaryType="nt:unstructured">
                 <policy_641562756958017
+                    jcr:lastModified="{Date}2020-10-12T17:49:39.377+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Text"
                     sling:resourceType="wcm/core/components/policy/policy">
@@ -177,6 +179,8 @@
                 </policy_641475696923109>
                 <policy_641528232375303
                     jcr:description="Allows all sizes, but not H1, which is reserved for the main page title."
+                    jcr:lastModified="{Date}2020-10-13T05:01:07.221+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Content Title"
                     sling:resourceType="wcm/core/components/policy/policy"
@@ -184,6 +188,28 @@
                     linkDisabled="false"
                     type="h2">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-title--pseudo-h1"
+                                    cq:styleId="1602545424478"
+                                    cq:styleLabel="Pseudo h1"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Transformation"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-title--uppercase"
+                                    cq:styleId="1602545445641"
+                                    cq:styleLabel="Uppercase"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                    </cq:styleGroups>
                 </policy_641528232375303>
             </title>
             <experiencefragment jcr:primaryType="nt:unstructured">
@@ -303,6 +329,47 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_123618232984408
+                    cq:styleDefaultElement="div"
+                    jcr:lastModified="{Date}2020-10-13T14:43:17.880+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="WKND MUZIK-Container Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundImageEnabled="true"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-container--hero-banner"
+                                    cq:styleElement="div"
+                                    cq:styleId="1602492597147"
+                                    cq:styleLabel="HeroBannerLeftContent"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-container--hero-banner cmp-container--hero-banner-right "
+                                    cq:styleElement="div"
+                                    cq:styleId="1602492619017"
+                                    cq:styleLabel="HeroBannerRightContent"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="cmp-container--two-container"
+                                    cq:styleElement="div"
+                                    cq:styleId="1602580306934"
+                                    cq:styleLabel="TwoContainerLayout"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="cmp-container--three-container"
+                                    cq:styleElement="div"
+                                    cq:styleId="1602580318069"
+                                    cq:styleLabel="ThreeContainerLayout"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_123618232984408>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -341,8 +408,7 @@
             </page>
             <separator jcr:primaryType="nt:unstructured">
                 <policy_1602151807999
-                    cq:styleDefaultClasses="cmp-separator--default"
-                    jcr:lastModified="{Date}2020-10-08T15:41:48.597+05:30"
+                    jcr:lastModified="{Date}2020-10-12T18:34:35.100+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="WKND MUZIK-Separator Policy"
@@ -354,18 +420,13 @@
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
-                                    cq:styleClasses="cmp-separator--default cmp-separator--left"
-                                    cq:styleId="1602151861410"
-                                    cq:styleLabel="Left"
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item1
-                                    cq:styleClasses="cmp-separator--default cmp-separator--center"
-                                    cq:styleId="1602151864767"
+                                    cq:styleClasses="cmp-separator--center"
+                                    cq:styleId="1602507813268"
                                     cq:styleLabel="Center"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item2
-                                    cq:styleClasses="cmp-separator--default cmp-separator--right"
-                                    cq:styleId="1602151868805"
+                                <item1
+                                    cq:styleClasses="cmp-separator--right"
+                                    cq:styleId="1602507814331"
                                     cq:styleLabel="Right"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
@@ -373,6 +434,54 @@
                     </cq:styleGroups>
                 </policy_1602151807999>
             </separator>
+            <carousel jcr:primaryType="nt:unstructured">
+                <policy_1602461150208
+                    cq:styleDefaultClasses="cmp-carousel--wknd-muzik"
+                    jcr:lastModified="{Date}2020-10-13T04:01:18.319+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="WKND MUZIK-Carousel Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    autopauseDisabled="true"
+                    autoplay="true"
+                    delay="1000">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1602461150208>
+            </carousel>
+            <button jcr:primaryType="nt:unstructured">
+                <policy_1602503968635
+                    jcr:lastModified="{Date}2020-10-12T18:33:15.306+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="WKND MUZIK-Button Policy"
+                    sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Button Variant"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-button--medium"
+                                    cq:styleId="1602504845140"
+                                    cq:styleLabel="Button-Medium"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Button Width"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-button--full-width"
+                                    cq:styleId="1602504880599"
+                                    cq:styleLabel="Full Width"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                    </cq:styleGroups>
+                </policy_1602503968635>
+            </button>
         </components>
     </wknd-muzik>
 </jcr:root>
