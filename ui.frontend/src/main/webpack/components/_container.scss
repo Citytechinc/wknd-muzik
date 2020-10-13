@@ -1,1 +1,55 @@
-.cmp-container {}
+/*banner style with content on left*/
+.cmp-container--hero-banner {
+    .cmp-container {
+        background-position: top center;
+        box-shadow: inset 0 0 15rem 0 $color-black;
+        color: $color-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8.4vw 9.09090909% 7.3vw;
+        position: relative;
+
+        &:before {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 9.09090909%, rgba(0, 0, 0, 0) 50%);
+            content:'';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .aem-Grid {
+            width: 45%;
+            z-index: 1;
+
+            .cmp-text {
+                margin: 2.4rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            background-position: center;
+
+            &:before {
+                background: none;
+            }
+
+            .aem-Grid {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*banner style with content on right*/
+.cmp-container--hero-banner-right {
+    .cmp-container {
+        align-items: flex-end;
+
+        &:before {
+            background: linear-gradient(275deg, rgba(0, 0, 0, 0.8) 9.09090909%, rgba(0, 0, 0, 0) 50%);
+        }
+    }
+}

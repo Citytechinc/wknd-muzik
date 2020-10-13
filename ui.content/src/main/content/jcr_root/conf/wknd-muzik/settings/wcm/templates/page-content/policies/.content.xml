@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2020-10-08T15:41:48.616+05:30"
+        cq:lastModified="{Date}2020-10-13T05:01:07.228+05:30"
         cq:lastModifiedBy="admin"
         cq:policy="wknd-muzik/components/page/policy"
         jcr:primaryType="nt:unstructured"
@@ -57,6 +57,18 @@
                                 sling:resourceType="wcm/core/components/policies/mapping"/>
                             <separator
                                 cq:policy="wknd-muzik/components/separator/policy_1602151807999"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <carousel
+                                cq:policy="wknd-muzik/components/carousel/policy_1602461150208"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <container
+                                cq:policy="wknd-muzik/components/container/policy_123618232984408"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wcm/core/components/policies/mapping"/>
+                            <button
+                                cq:policy="wknd-muzik/components/button/policy_1602503968635"
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="wcm/core/components/policies/mapping"/>
                         </components>
