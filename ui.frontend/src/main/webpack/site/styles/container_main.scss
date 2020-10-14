@@ -2,5 +2,6 @@
 //== Container main content style, used on page template
 
 main.container {
+    @include max-screen();
     padding: 0;
 }

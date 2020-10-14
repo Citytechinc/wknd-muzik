@@ -331,7 +331,7 @@
                 </policy_1575040440977>
                 <policy_123618232984408
                     cq:styleDefaultElement="div"
-                    jcr:lastModified="{Date}2020-10-13T14:43:17.880+05:30"
+                    jcr:lastModified="{Date}2020-10-14T22:21:37.108+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="WKND MUZIK-Container Policy"
@@ -365,6 +365,12 @@
                                     cq:styleElement="div"
                                     cq:styleId="1602580318069"
                                     cq:styleLabel="ThreeContainerLayout"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="cmp-container--banner-image-content"
+                                    cq:styleElement="div"
+                                    cq:styleId="1602677934042"
+                                    cq:styleLabel="BannerImageContentAdjacent"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>

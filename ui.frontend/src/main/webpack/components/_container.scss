@@ -54,6 +54,42 @@
     }
 }
 
+/*banner style with image and content adjacent */
+.cmp-container--banner-image-content {
+    &>.cmp-container {
+        .aem-Grid {
+            align-items: center;
+            display: flex;
+
+            .cmp-image {
+                line-height: 1;
+                margin: 2rem 0;
+                max-width: 88.2%;
+            }
+
+            .cmp-container {
+                margin: 2rem 0;
+
+                .cmp-text {
+                   margin-top: 7rem;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            margin: 5rem 0;
+
+            .aem-Grid {
+                flex-direction: column;
+
+                .cmp-image {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
 /*three container layout*/
 .cmp-container--three-container {
     .cmp-container {
