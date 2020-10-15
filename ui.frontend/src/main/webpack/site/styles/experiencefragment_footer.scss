@@ -2,15 +2,104 @@
 //== XF Footer style, used on page template
 
 footer.experiencefragment {
-    padding: .5em 1em;
-    border-top: 1px solid $color-foreground;
-
-    @media (prefers-color-scheme: dark) {
-        border-color: $color-foreground-dark;
-    }
+    background-color: $color-gray;
 
     .cmp-separator__horizontal-rule {
         margin: 0;
         border: 0;
     }
+
+    .cmp-list {
+
+        &__item {
+            font-size: 14px;
+            margin-bottom: 20px;
+
+            &:first-of-type {
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: bold;
+                letter-spacing: 2.4px;
+                margin-bottom: 25px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &__item-link {
+            &:hover, &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .cmp-image {
+
+        &__image {
+            height: 14px;
+            width: auto;
+        }
+
+        &__link {
+            padding: 5px;
+        }
+    }
+
+    .cmp-container {
+
+        .image {
+            display: inline-block;
+            width: auto !important;
+            margin-right: 25px;
+
+            &:last-of-type {
+                margin-right: 0;
+                position: absolute;
+                right: 0;
+                top: 2px;
+
+                .cmp-image__image {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+
+        .text {
+            font-size: 14px;
+            font-family: "Open Sans";
+            color: $color-white;
+        }
+    }
+
+    .cmp-experiencefragment--footer {
+        > .cmp-container > .aem-Grid > .container {
+
+            // Link lists, Social icons, etc.
+            &:first-of-type {
+                padding: 80px 0;
+
+                > .cmp-container > .aem-Grid > .container {
+
+                    // Social icons container
+                    &:last-of-type {
+                        position: relative;
+                        margin-left: -5px;
+                        margin-top: -3px;
+                    }
+                }
+            }
+
+            // Footer text
+            &:last-of-type {
+                border-top: 1px $color-white solid;
+                opacity: 0.25;
+                padding: 25px 0;
+                width: 100%;
+            }
+        }
+    }
+
 }
