@@ -4,7 +4,7 @@
 header.experiencefragment {
 
     // Global positioning styles
-    .navigation, .languagenavigation, .search {
+    .navigation, .languagenavigation, .search, .button {
         position: absolute;
         top: 20px;
         width: 100%;
@@ -37,6 +37,89 @@ header.experiencefragment {
     }
 
     //== Navigation
+
+    .cmp-navigation {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 45px;
+        padding-left: 35px;
+        padding-right: 35px;
+
+        &__group {
+            position: relative;
+            height: 45px;
+        }
+
+        &__item {
+
+            &--level-0 {
+                display: block;
+                height: 45px;
+                position: relative;
+
+                > .cmp-navigation__item-link {
+                    display: inline-block;
+                    vertical-align: center;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    font-size: 29px;
+                    letter-spacing: 0.58px;
+                    z-index: 10;
+
+                    &:focus, &:hover {
+                        text-decoration: none;
+                    }
+
+                }
+            }
+
+            .cmp-navigation__group {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                justify-content: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: calc(100% - 560px);
+                list-style: none;
+                padding: 0;
+                margin: 0 280px;
+
+                .cmp-navigation__item--level-1 {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 2.4px;
+                    margin-right: 50px;
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        &__item-link {
+            font-weight: bold;
+            color: $color-white;
+
+            &--highlight {
+                color: $color-blue;
+                margin-right: 4px;
+            }
+
+            &:focus, &:hover {
+                color: $color-link !important;
+                text-decoration: none !important;
+
+                .cmp-navigation__item-link--highlight {
+                    color: $color-link;
+                }
+            }
+        }
+
+    }
 
     .cmp-navigation__item--active > .cmp-navigation__item-link {
         font-weight: bold;
@@ -81,6 +164,7 @@ header.experiencefragment {
             border-radius: 5px;
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
+            z-index: 9;
 
             @media (prefers-color-scheme: dark) {
                 border-color: $color-foreground-dark;
@@ -180,6 +264,7 @@ header.experiencefragment {
             border-radius: 5px;
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
+            z-index: 9;
 
             @media (prefers-color-scheme: dark) {
                 border-color: $color-foreground-dark;
@@ -202,7 +287,7 @@ header.experiencefragment {
         }
 
         .cmp-search__input {
-            color: white;
+            color: $color-white;
             background: transparent;
             border: none;
         }
@@ -214,6 +299,61 @@ header.experiencefragment {
             background-repeat: no-repeat;
 
             //background-image: url('http://localhost:8080/etc.clientlibs/wknd-muzik/clientlibs/clientlib-site/resources/images/icon-search.svg');
+        }
+    }
+
+    .button {
+        width: auto;
+        right: 134px;
+
+        .cmp-button {
+            display: inline-block;
+            margin: 0;
+            background-color: transparent;
+            border: 1px solid $color-white;
+
+            &:hover, &:focus {
+                background-color: $color-white;
+                text-decoration: none;
+
+                .cmp-button__icon--icon-material-email {
+                    &:before {
+                        background-image: url('../resources/images/icon-material-email-dark.svg');
+                    }
+                }
+
+                .cmp-button__text {
+                    color: $color-black;
+                    text-decoration: none;
+                }
+            }
+
+            &__icon {
+
+                &--icon-material-email {
+					display: inline-block;
+                    margin-right: 11px;
+                    margin-bottom: -1px;
+
+                    &:before {
+                        content: " ";
+                        display: block;
+                        width: 14px;
+                        height: 11px;
+                        background-position: center;
+                        background-image: url('../resources/images/icon-material-email.svg');
+                        background-repeat: no-repeat;
+                    }
+
+                }
+
+            }
+
+            &__text {
+                font-size: 12px;
+                font-weight: bold;
+                letter-spacing: 2.4px;
+            }
         }
     }
 
