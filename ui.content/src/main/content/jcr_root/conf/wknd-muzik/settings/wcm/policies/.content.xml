@@ -9,10 +9,12 @@
                 <container jcr:primaryType="nt:unstructured">
                     <form-container
                         jcr:description="Allows the form components to be dropped into this form container."
+                        jcr:lastModified="{Date}2020-10-16T16:12:59.798+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Content Form"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/apps/wknd-muzik/components/form/button,/apps/wknd-muzik/components/form/hidden,/apps/wknd-muzik/components/form/options,/apps/wknd-muzik/components/form/text]">
+                        components="[/apps/wknd-muzik/components/form/button,/apps/wknd-muzik/components/form/container,/apps/wknd-muzik/components/form/hidden,/apps/wknd-muzik/components/form/options,/apps/wknd-muzik/components/form/text]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </form-container>
                 </container>
@@ -331,7 +333,7 @@
                 </policy_1575040440977>
                 <policy_123618232984408
                     cq:styleDefaultElement="div"
-                    jcr:lastModified="{Date}2020-10-14T22:21:37.108+05:30"
+                    jcr:lastModified="{Date}2020-10-16T16:35:30.660+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="WKND MUZIK-Container Policy"
@@ -374,6 +376,68 @@
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
+                        <item1
+                            cq:styleGroupLabel="Top Margin"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="margin-top-25"
+                                    cq:styleId="1602845990607"
+                                    cq:styleLabel="MarginTop25"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="margin-top-50"
+                                    cq:styleId="1602846009424"
+                                    cq:styleLabel="MarginTop50"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="margin-top-75"
+                                    cq:styleId="1602846018863"
+                                    cq:styleLabel="MarginTop75"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="margin-top-100"
+                                    cq:styleId="1602846024971"
+                                    cq:styleLabel="MarginTop100"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="margin-top-125"
+                                    cq:styleId="1602846032021"
+                                    cq:styleLabel="MarginTop125"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                        <item2
+                            cq:styleGroupLabel="Bottom Margin"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="margin-bottom-25"
+                                    cq:styleId="1602846080765"
+                                    cq:styleLabel="MarginBottom25"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="margin-bottom-50"
+                                    cq:styleId="1602846096960"
+                                    cq:styleLabel="MarginBottom50"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="margin-bottom-75"
+                                    cq:styleId="1602846112078"
+                                    cq:styleLabel="MarginBottom75"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="margin-bottom-100"
+                                    cq:styleId="1602846117093"
+                                    cq:styleLabel="MarginBottom100"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="margin-bottom-125"
+                                    cq:styleId="1602846122072"
+                                    cq:styleLabel="MarginBottom125"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
                     </cq:styleGroups>
                 </policy_123618232984408>
             </container>
@@ -488,6 +552,31 @@
                     </cq:styleGroups>
                 </policy_1602503968635>
             </button>
+            <embed jcr:primaryType="nt:unstructured">
+                <policy_1602795999421
+                    jcr:lastModified="{Date}2020-10-16T02:58:20.568+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="WKND MUZIK- Embed Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedEmbeddables="core/wcm/components/embed/v1/embed/embeddable/youtube"
+                    embeddablesDisabled="false"
+                    htmlDisabled="false"
+                    urlDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-embed--aspect-ratio"
+                                    cq:styleId="1602797232339"
+                                    cq:styleLabel="AspectRatio16-9"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1602795999421>
+            </embed>
         </components>
     </wknd-muzik>
 </jcr:root>
