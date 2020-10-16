@@ -1,4 +1,35 @@
-.cmp-form-text {}
-.cmp-form-text__help-block {}
-.cmp-form-text__textarea {}
-.cmp-form-text__text {}
+.cmp-form-text {
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    line-height: 1.29;
+    letter-spacing: 0.28rem;
+    text-transform: uppercase;
+
+    label {
+        margin: 1.6rem 0 3.2rem;
+    }
+
+    &__text {
+        &::placeholder {
+            color: $color-white;
+            font-weight: $font-weight-regular;
+            opacity: 0.9;
+        }
+
+        &:focus, &:active {
+            border-color: $color-primary;
+            caret-color: $color-primary;
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+
+        &:invalid {
+            border-color: $color-red !important;
+            background-position: 97% 1.4rem;
+            background-image: url("../resources/images/icon-warning.svg");
+            background-repeat: no-repeat;
+        }
+    }
+}

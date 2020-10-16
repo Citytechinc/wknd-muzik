@@ -75,6 +75,7 @@ footer.experiencefragment {
     }
 
     .cmp-experiencefragment--footer {
+        @include max-screen();
         > .cmp-container > .aem-Grid > .container {
 
             // Link lists, Social icons, etc.

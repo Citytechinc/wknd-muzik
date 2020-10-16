@@ -9,24 +9,14 @@ body {
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
-    color: $color-foreground-dark;
-    background: $color-background-dark;
+    color: $color-foreground;
+    background: $color-background;
 
-    @media (prefers-color-scheme: light) {
-        color:       $color-foreground;
-        background:  $color-background;
+    //switch color to light-colors if dark mode selected, as default is dark mode colors
+    @media (prefers-color-scheme: dark) {
+        color:       $color-foreground-dark;
+        background:  $color-background-dark;
     }
-}
-
-input,
-textarea {
-    appearance: none;
-    border-radius: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 button,
@@ -35,6 +25,60 @@ optgroup,
 select,
 textarea {
     font: inherit;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+label, legend {
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+input[type=text], input[type=search], input[type=url], input[type=number], input[type=email], textarea {
+  -webkit-appearance: none;
+}
+
+input:not([type=checkbox]):not([type=radio]), textarea, select {
+    background-color: transparent;
+    border: solid 0.1rem #e6e6e6;
+    border-radius: 0.4rem;
+    color: $color-white;
+    font-size: $font-size-small;
+    font-weight: $font-weight-semi-bold;
+    line-height: 2.57;
+    margin-bottom: 1.2rem;
+    max-width: 32rem;
+    min-height: 4.5rem;
+    padding: 0.4rem 1.6rem;
+    width: 100%;
+}
+
+select {
+    appearance: none;
+    background-position: 97% 1.8rem;
+    background-image: url("../resources/images/icon-down.svg");
+    background-repeat: no-repeat;
+    padding-right: 3rem;
+
+    option {
+        padding: 0.75rem 0;
+        font-weight: $font-weight-bold;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 0.5rem 0;
+  width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 ul {
@@ -97,3 +141,55 @@ h6, .heading6 {
     font-weight: $font-weight-bold;
     line-height: 1.25;
 }
+
+.sr-only {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.margin-top-25 {
+    margin-top: 1.67% !important;
+}
+
+.margin-top-50 {
+    margin-top: 3.34% !important;
+}
+
+.margin-top-75 {
+    margin-top: 5% !important;
+}
+
+.margin-top-100 {
+    margin-top: 6.67% !important;
+}
+
+.margin-top-125 {
+    margin-top: 8.34% !important;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 1.67% !important;
+}
+
+.margin-bottom-50 {
+    margin-bottom: 3.34% !important;
+}
+
+.margin-bottom-75 {
+    margin-bottom: 5% !important;
+}
+
+.margin-bottom-100 {
+    margin-bottom: 6.67% !important;
+}
+
+.margin-bottom-125 {
+    margin-bottom: 8.34% !important;
+}
+
+
