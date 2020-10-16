@@ -1,9 +1,114 @@
-.cmp-teaser {}
-.cmp-teaser__image {}
-.cmp-teaser__content {}
-.cmp-teaser__pretitle {}
-.cmp-teaser__title {}
-.cmp-teaser__title-link {}
-.cmp-teaser__description {}
-.cmp-teaser__action-container {}
-.cmp-teaser__action-link {}
+/* Teaser With Background Image */
+.cmp-teaser--bg-text {
+	.cmp-teaser {
+		&__content {
+			padding: 2.34vw 1.17vw;
+		}
+		&__title {
+			@extend .heading4;
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+/* Teaser with Image and Text */
+.cmp-teaser--img-text {
+	.cmp-teaser {
+		&__title {
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+
+/* Teaser with Border and Text */
+.cmp-teaser--border-text {
+	.cmp-teaser {
+		&__content {
+			padding: 5.46vw 2.34vw 3.67vw;
+			text-align: center;
+			border-radius: 1.6rem;
+			border: 1px solid $color-primary;
+		}
+		&__pretitle {
+			@extend .heading5;
+			letter-spacing: 2.8px;
+			margin-bottom: 0.9rem;
+		}
+		&__title {
+			margin-bottom: 3rem;
+		}
+		&__description {
+			margin-bottom: 4.5rem;
+		}
+		&__action-link {
+			@extend .heading5;
+			color: $color-primary;
+			padding: 1.04vw 2.4vw;
+			border-radius: 0.8rem;
+			border: solid 1px $color-primary;
+			text-transform: uppercase;
+		}
+	}
+}
+
+/* Teaser With Inline Image and Text */
+.cmp-teaser--inline-text {
+	.cmp-teaser {
+		display: flex;
+		&__image {
+			@include flex-50();
+			order: 2;
+		}
+		&__content {
+			@include flex-50();
+			order: 1;
+			padding: 7.03vw 4.84vw 2.89vw 7.03vw;
+			background-color: $color-primary;
+		}
+		&__pretitle {
+			margin-bottom: 2.7rem;
+			text-transform: uppercase;
+		}
+		&__title {
+			@extend .heading2;
+			margin-bottom: 2.7rem;
+			text-transform: uppercase;
+		}
+		@media (max-width: 768px) {
+			display: block;
+
+			&__image {
+				@include flex-100();
+			}
+
+			&__content {
+				@include flex-100();
+			}
+		}
+	}
+	.cmp-image {
+		height: 100%;
+		&__image {
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+}
+
+.cmp-teaser--popular-tag {
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url(../../clientlib-site/resources/images/icon-flag.svg);
+        background-color: $color-primary;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10rem;
+        padding: 0.93vw 1.25vw;
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 45%;
+    }
+}
