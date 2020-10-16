@@ -1,6 +1,7 @@
 .cmp-carousel--wknd-muzik {
     .cmp-carousel {
         position: relative;
+        margin-top: -8rem;
 
         &__content {}
 
@@ -9,9 +10,14 @@
             height: 63.1rem;
 
             .cmp-container--hero-banner {
+
                 .cmp-container {
                     min-height: 63.1rem;
                     max-height: 63.1rem;
+
+                    &>.aem-Grid {
+                        margin-top: 3rem;
+                    }
                 }
 
                 .cmp-text {
