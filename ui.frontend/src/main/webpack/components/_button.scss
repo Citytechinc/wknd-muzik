@@ -33,5 +33,7 @@
 .cmp-button--full-width {
     .cmp-button {
         width: 100%;
+        display: block;
+        text-align: center;
     }
 }

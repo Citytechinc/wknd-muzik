@@ -1,9 +1,5 @@
 .cmp-breadcrumb {
-    margin: 4.5rem 1em;
-
-    &__list {
-
-    }
+    margin: 4.5rem 2.5em;
 
     &__item {
         font-size: $font-size-xsmall;
@@ -32,8 +28,5 @@
         &:last-child:after {
             content: none;
         }
-    }
-
-    &__item-link {
     }
 }
