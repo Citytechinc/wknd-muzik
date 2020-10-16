@@ -13,3 +13,19 @@
         }
     }
 }
+
+.cmp-title--center {
+    .cmp-title {
+        &__text {
+            text-align: center;
+        }
+    }
+}
+
+.cmp-title--right {
+    .cmp-title {
+        &__text {
+            text-align: right;
+        }
+    }
+}
