@@ -149,14 +149,12 @@ header.experiencefragment {
             background-position: center;
             background-image: url('../resources/images/icon-web.svg');
             background-repeat: no-repeat;
-
-            //background-image: url('http://localhost:8080/etc.clientlibs/wknd-muzik/clientlibs/clientlib-site/resources/images/icon-web.svg');
         }
         & > .cmp-languagenavigation__group {
             visibility: hidden;
             transition-delay: .25s;
             position: absolute;
-            top: 34px;
+            top: 40px;
             min-width: 220px;
             padding: 0;
             border-top: 0;
@@ -204,7 +202,7 @@ header.experiencefragment {
     .cmp-languagenavigation__item--level-1:not(:first-child)::before {
         content: " | ";
     }
-    .cmp-languagenavigation__item--active {
+    .cmp-languagenavigation__item--active.cmp-languagenavigation__item--level-0 {
 
         &:before {
             content: " ";
@@ -217,8 +215,6 @@ header.experiencefragment {
             background-position: center;
             background-image: url('../resources/images/icon-check.svg');
             background-repeat: no-repeat;
-
-            //background-image: url('http://localhost:8080/etc.clientlibs/wknd-muzik/clientlibs/clientlib-site/resources/images/icon-check.svg');
         }
 
     }
@@ -249,13 +245,12 @@ header.experiencefragment {
             background-image: url('../resources/images/icon-search.svg');
             background-repeat: no-repeat;
 
-            //background-image: url('http://localhost:8080/etc.clientlibs/wknd-muzik/clientlibs/clientlib-site/resources/images/icon-search.svg');
         }
         & > .cmp-search {
             visibility: hidden;
             transition-delay: 0.25s;
             position: absolute;
-            top: 34px;
+            top: 40px;
             right: 0;
             min-width: 220px;
             padding: 0;
@@ -285,12 +280,20 @@ header.experiencefragment {
 
         .cmp-search__field {
             height: auto;
-        }
 
-        .cmp-search__input {
-            color: $color-white;
-            background: transparent;
-            border: none;
+            > .cmp-search__input {
+                color: $color-white;
+                background: transparent;
+                border: none;
+
+                margin-bottom: 0;
+                min-height: auto;
+            }
+
+            .cmp-search__clear-icon {
+                top: 8px;
+                background-image: url('../resources/images/icon-cross.svg');
+            }
         }
 
         .cmp-search__icon {
@@ -298,8 +301,31 @@ header.experiencefragment {
             left: 2px;
             background-image: url('../resources/images/icon-search.svg');
             background-repeat: no-repeat;
+        }
 
-            //background-image: url('http://localhost:8080/etc.clientlibs/wknd-muzik/clientlibs/clientlib-site/resources/images/icon-search.svg');
+        .cmp-search__results {
+            padding: 0;
+            background: transparent;
+            border: 0;
+
+        }
+
+        .cmp-search__item {
+            display: block;
+            padding: 8px 10px;
+            border: 0;
+            background: $color-black;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            top: calc(100% - 5px);
+            z-index: 10;
+        }
+
+        .cmp-search__item-mark {
+            background-color: $color-link;
+            color: $color-white;
         }
     }
 
