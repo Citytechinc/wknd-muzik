@@ -6,6 +6,8 @@
 
 **Authoring Guide PDF** located in this repo as `/authoring-guide.pdf`
 
+**Content Package** additionally located in `/content-package/WKND-MUZIK-Content.zip`
+
 **AEM Cloud Service Version:** `2020.9.4271.20200927T230730Z` 
 
 ## Adobe AEM Cloud Service Environments
