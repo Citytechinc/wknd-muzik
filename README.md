@@ -14,4 +14,5 @@
 
 **Author:** `https://author-p7505-e19090.adobeaemcloud.com/`
 
-**Publish:** `https://publish-p7505-e19090.adobeaemcloud.com/`
+**Publish Start Page:** `https://publish-p7505-e19090.adobeaemcloud.com/content/wknd-muzik/languages/united-states/en-us.html`
+
