@@ -229,6 +229,17 @@ header.experiencefragment {
             backdrop-filter: blur(1rem);
             z-index: 9;
 
+            &::before {
+                content:'';
+                border-top: 0;
+                border-bottom: 1.6rem solid #393939;
+                border-left: 0.8rem solid transparent;
+                border-right: 0.8rem solid transparent;
+                position: absolute;
+                right: 0.5rem;
+                top: -1.6rem;
+            }
+
             @media (prefers-color-scheme: dark) {
                 border-color: $color-foreground-dark;
                 background: $color-background-dark;
@@ -249,17 +260,6 @@ header.experiencefragment {
         font-size: 1.1rem;
         letter-spacing: 0.44px;
         right: 0;
-
-        &::before {
-            content:'';
-            border-top: 0;
-            border-bottom: 1.6rem solid #393939;
-            border-left: 0.8rem solid transparent;
-            border-right: 0.8rem solid transparent;
-            position: absolute;
-            right: 0.5rem;
-            top: -1.6rem;
-        }
     }
 
     .cmp-languagenavigation__item {

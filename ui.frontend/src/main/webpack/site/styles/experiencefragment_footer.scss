@@ -12,15 +12,15 @@ footer.experiencefragment {
     .cmp-list {
 
         &__item {
-            font-size: 14px;
-            margin-bottom: 20px;
+            font-size: $font-size-small;
+            margin-bottom: 2rem;
 
             &:first-of-type {
                 text-transform: uppercase;
-                font-size: 12px;
-                font-weight: bold;
-                letter-spacing: 2.4px;
-                margin-bottom: 25px;
+                font-size: $font-size-xsmall;
+                font-weight: $font-weight-bold;
+                letter-spacing: 0.24rem;
+                margin-bottom: 2.5rem;
             }
 
             &:last-of-type {
@@ -33,17 +33,21 @@ footer.experiencefragment {
                 text-decoration: underline;
             }
         }
+
+        @media (max-width: 768px) {
+            margin-bottom: 4rem;
+        }
     }
 
     .cmp-image {
 
         &__image {
-            height: 14px;
+            height: 1.4rem;
             width: auto;
         }
 
         &__link {
-            padding: 5px;
+            padding: 0.5rem;
         }
     }
 
@@ -52,23 +56,23 @@ footer.experiencefragment {
         .image {
             display: inline-block;
             width: auto !important;
-            margin-right: 25px;
+            margin-right: 2.5rem;
 
             &:last-of-type {
                 margin-right: 0;
                 position: absolute;
                 right: 0;
-                top: 2px;
+                top: 0.2rem;
 
                 .cmp-image__image {
-                    height: 16px;
-                    width: 16px;
+                    height: 1.6rem;
+                    width: 1.6rem;
                 }
             }
         }
 
         .text {
-            font-size: 14px;
+            font-size: $font-size-small;
             font-family: "Open Sans";
             color: $color-white;
         }
@@ -80,24 +84,24 @@ footer.experiencefragment {
 
             // Link lists, Social icons, etc.
             &:first-of-type {
-                padding: 80px 0;
+                padding: 8rem 0;
 
                 > .cmp-container > .aem-Grid > .container {
 
                     // Social icons container
                     &:last-of-type {
                         position: relative;
-                        margin-left: -5px;
-                        margin-top: -3px;
+                        margin-left: -0.5rem;
+                        margin-top: -0.3rem;
                     }
                 }
             }
 
             // Footer text
             &:last-of-type {
-                border-top: 1px $color-white solid;
+                border-top: 0.1rem $color-white solid;
                 opacity: 0.25;
-                padding: 25px 0;
+                padding: 2.5rem 0;
                 width: 100%;
             }
         }
